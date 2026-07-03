@@ -1,12 +1,78 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta viewport="width=device-width, initial-scale=1.0">
-    <title>Minha primeira página HTML</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craques da Copa</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <h1>Olá, mundo!</h1>
-    <p>Esta é a minha primeira página HTML.</p>
+
+    <header>
+        <h1>Craques da Copa do Mundo</h1>
+        <p>Escolha o seu jogador favorito e conheça a sua história!</p>
+    </header>
+
+    <main>
+        <section class="container-jogadores">
+            
+            <article class="card card-argentina">
+                <img src="images/messi.jpg" alt="Lionel Messi">
+                <h2>Lionel Messi</h2>
+                <p>O gênio argentino que conquistou o mundo.</p>
+                <div class="botoes">
+                    <a href="pages/messi.html" class="btn-perfil">Ver Perfil</a>
+                    <button class="btn-voto" onclick="votar('Lionel Messi')">Votar</button>
+                </div>
+            </article>
+
+            <article class="card card-brasil">
+                <img src="images/neymar.jpg" alt="Neymar Jr">
+                <h2>Neymar Jr</h2>
+                <p>A magia e a habilidade do futebol brasileiro.</p>
+                <div class="botoes">
+                    <a href="pages/neymar.html" class="btn-perfil">Ver Perfil</a>
+                    <button class="btn-voto" onclick="votar('Neymar Jr')">Votar</button>
+                </div>
+            </article>
+
+            <article class="card card-portugal">
+                <img src="images/cr7.jpg" alt="Cristiano Ronaldo">
+                <h2>Cristiano Ronaldo</h2>
+                <p>A máquina de gols e determinação de Portugal.</p>
+                <div class="botoes">
+                    <a href="pages/cr7.html" class="btn-perfil">Ver Perfil</a>
+                    <button class="btn-voto" onclick="votar('Cristiano Ronaldo')">Votar</button>
+                </div>
+            </article>
+
+            <article class="card card-franca">
+                <img src="images/mbappe.jpg" alt="Kylian Mbappé">
+                <h2>Kylian Mbappé</h2>
+                <p>A velocidade e a potência da nova era francesa.</p>
+                <div class="botoes">
+                    <a href="pages/mbappe.html" class="btn-perfil">Ver Perfil</a>
+                    <button class="btn-voto" onclick="votar('Kylian Mbappé')">Votar</button>
+                </div>
+            </article>
+
+            <article class="card card-noruega">
+                <img src="images/haaland.jpg" alt="Erling Haaland">
+                <h2>Erling Haaland</h2>
+                <p>O meteoro norueguês e máquina de fazer gols.</p>
+                <div class="botoes">
+                    <a href="pages/haaland.html" class="btn-perfil">Ver Perfil</a>
+                    <button class="btn-voto" onclick="votar('Erling Haaland')">Votar</button>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Trabalho de Construção de Páginas Web - André Martins</p>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
